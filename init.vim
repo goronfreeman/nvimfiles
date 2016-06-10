@@ -1,11 +1,15 @@
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'NLKNguyen/papercolor-theme'
 
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'Raimondi/delimitMate'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
@@ -71,3 +75,4 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_ruby_checkers=['rubocop']
+let g:deoplete#enable_at_startup = 1
