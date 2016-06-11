@@ -1,7 +1,4 @@
 call plug#begin('~/.config/nvim/plugged')
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
 
 " themes
 Plug 'altercation/vim-colors-solarized'
@@ -17,7 +14,6 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 " FZF
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes n \| ./install' }
@@ -26,7 +22,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes n \| ./install' }
 Plug 'Keithbsmiley/rspec.vim', { 'for': ['ruby'] }
 Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
-Plug 'tpope/vim-rbenv', { 'for': ['ruby', 'eruby'] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 
 " markup
