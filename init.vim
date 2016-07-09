@@ -13,23 +13,23 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 
 " FZF
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes n \| ./install' }
 
 " ruby
-Plug 'tpope/vim-rbenv', { 'for': ['ruby', 'eruby'] }
-Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
-Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'Keithbsmiley/rspec.vim', { 'for': ['ruby'] }
 Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
+Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
+Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 
 " markup
-Plug 'othree/html5.vim', { 'for': ['html', 'javascript', 'eruby'] }
-Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'eruby'] }
-Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss'] }
+Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'eruby'] }
+Plug 'othree/html5.vim', { 'for': ['html', 'javascript', 'eruby'] }
+Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 
 call plug#end()
 
