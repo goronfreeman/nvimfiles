@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 " themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'dracula/vim'
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -35,7 +36,7 @@ call plug#end()
 " set theme
 syntax enable
 set background=dark
-colorscheme PaperColor
+colorscheme dracula
 
 " tab settings
 set ai
