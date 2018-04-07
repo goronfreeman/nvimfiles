@@ -13,16 +13,17 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
 
 " FZF
 Plug '/usr/local/opt/fzf'
@@ -75,8 +76,12 @@ inoremap jk <ESC>
 set cursorline
 set wildmenu
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrl_cmd = 'CtrlP'
+nnoremap <c-p> :FZF<cr>
+nnoremap <c-o> :BTags<cr>
+tnoremap <Esc> <C-\><C-n>
+
+" ale
+let g:airline#extensions#ale#enabled = 1
 
 " syntastic
 set statusline+=%#warningmsg#
