@@ -3,7 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 " themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'dracula/vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 function! DoRemote(arg)
   UpdateRemotePlugins
