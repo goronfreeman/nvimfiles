@@ -10,6 +10,8 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'airblade/vim-gitgutter'
+Plug 'aliou/sql-heredoc.vim'
+Plug 'kchmck/vim-coffee-script'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
@@ -47,9 +49,11 @@ call plug#end()
 syntax enable
 set background=dark
 colorscheme dracula
+set termguicolors
 
 " general
 set nowrap
+:au FocusLost * :wa
 
 " tab settings
 set ai
@@ -95,3 +99,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" automatically strip whitespace
+autocmd BufWritePre *.py :%s/\s\+$//e
