@@ -7,18 +7,18 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-Plug 'junegunn/vim-easy-align'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'junegunn/vim-easy-align'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'thaerkh/vim-indentguides'
+Plug 'tmhedberg/matchit'
+Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'Valloric/MatchTagAlways'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 
@@ -32,6 +32,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Ruby
+Plug 'ecomba/vim-ruby-refactoring'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'kchmck/vim-coffee-script'
 Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
@@ -43,6 +44,7 @@ Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 " markup
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'eruby'] }
+Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim', { 'for': ['html', 'javascript', 'eruby'] }
 Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 
@@ -65,20 +67,20 @@ set wildmenu
 set ai
 set et
 set sta
-set ts=2
-set sw=2
 set sts=2
+set sw=2
+set ts=2
 
 " searching
-set showmatch
 set ignorecase
+set showmatch
 set smartcase
 
 " line numbers
 set number
+set numberwidth=2
 set relativenumber
 set ruler
-set numberwidth=2
 
 for f in split(glob('~/.config/nvim/config/general/*.vim'), '\n')
   exe 'source' f
