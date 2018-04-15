@@ -5,10 +5,7 @@ function! s:RubyHashSyntaxToggle() range
     silent! execute a:firstline . ',' . a:lastline . 's/[^{,]*[{,]\?\zs\([^: ]\+\):/:\1 =>/g'
   endif
 endfunction
-
 command! -bar -range RubyHashSyntaxToggle <line1>,<line2>call s:RubyHashSyntaxToggle()
-
-noremap <Leader>rh :RubyHashSyntaxToggle<CR>
 
 autocmd BufWritePre *.py :%s/\s\+$//e
 :au FocusLost * :wa
