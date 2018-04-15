@@ -7,6 +7,7 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
+Plug 'junegunn/vim-easy-align'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
