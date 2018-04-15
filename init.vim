@@ -1,39 +1,41 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " themes
-Plug 'altercation/vim-colors-solarized'
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-Plug 'airblade/vim-gitgutter'
-Plug 'aliou/sql-heredoc.vim'
-Plug 'kchmck/vim-coffee-script'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'thaerkh/vim-indentguides'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-unimpaired'
+Plug 'Valloric/MatchTagAlways'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
+
+" Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " FZF
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " ruby
-Plug 'Keithbsmiley/rspec.vim', { 'for': ['ruby'] }
+Plug 'joker1007/vim-ruby-heredoc-syntax'
+Plug 'kchmck/vim-coffee-script'
 Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
+Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 
@@ -46,14 +48,17 @@ Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 call plug#end()
 
 " set theme
-syntax enable
-set background=dark
 colorscheme dracula
+set background=dark
 set termguicolors
+syntax enable
 
 " general
+set cursorline
+set fillchars+=vert:│ " vertical split character
+set noshowmode " remove extra status line 
 set nowrap
-:au FocusLost * :wa
+set wildmenu
 
 " tab settings
 set ai
@@ -75,30 +80,29 @@ set ruler
 set numberwidth=2
 
 " mappings
+let mapleader=","
 inoremap jk <ESC>
-
-set cursorline
-set wildmenu
-
-" FZF
-nnoremap <c-p> :FZF<cr>
-nnoremap <c-o> :BTags<cr>
-
-" ale
-let g:airline#extensions#ale#enabled = 1
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-" gitgutter update interval
-set updatetime=250
+nnoremap <leader>c :nohl<CR>
 
 " split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
+" quickfix/location list
+nnoremap ][q :copen<cr>
+nnoremap []q :cclose<cr>
+nnoremap ][l :lopen<cr>
+nnoremap []l :lclose<cr>
 
 " automatically strip whitespace
 autocmd BufWritePre *.py :%s/\s\+$//e
+" automatically save when focus is lsot
+:au FocusLost * :wa
+
+for f in split(glob('~/.config/nvim/config/plugin/*.vim'), '\n')
+  exe 'source' f
+endfor
