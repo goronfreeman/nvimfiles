@@ -32,7 +32,7 @@ Plug 'tpope/vim-rhubarb'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-" ruby
+" Ruby
 Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'kchmck/vim-coffee-script'
 Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
@@ -80,29 +80,9 @@ set relativenumber
 set ruler
 set numberwidth=2
 
-" mappings
-let mapleader=","
-inoremap jk <ESC>
-nnoremap <leader>c :nohl<CR>
-
-" split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-set splitbelow
-set splitright
-
-" quickfix/location list
-nnoremap ][q :copen<cr>
-nnoremap []q :cclose<cr>
-nnoremap ][l :lopen<cr>
-nnoremap []l :lclose<cr>
-
-" automatically strip whitespace
-autocmd BufWritePre *.py :%s/\s\+$//e
-" automatically save when focus is lsot
-:au FocusLost * :wa
+for f in split(glob('~/.config/nvim/config/general/*.vim'), '\n')
+  exe 'source' f
+endfor
 
 for f in split(glob('~/.config/nvim/config/plugin/*.vim'), '\n')
   exe 'source' f
