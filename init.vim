@@ -24,7 +24,6 @@ Plug 'w0rp/ale'
 
 " Git
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 
@@ -37,6 +36,7 @@ Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'kchmck/vim-coffee-script'
 Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
 Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
+Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 
