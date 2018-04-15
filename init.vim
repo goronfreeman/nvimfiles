@@ -48,8 +48,8 @@ Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 call plug#end()
 
 " set theme
-colorscheme dracula
 set background=dark
+colorscheme dracula
 set termguicolors
 syntax enable
 
