@@ -1,4 +1,5 @@
 let mapleader=","
+nmap <cr> o<esc>
 inoremap jk <esc>
 nnoremap <leader>c :nohl<cr>
 nnoremap <leader>rcm :RubyConvertMultiline<cr>

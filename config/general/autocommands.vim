@@ -14,9 +14,8 @@ function! s:RubyConvertMultiline()
   normal ^f(lDo
   normal p
   execute 's/, /,\r/g'
-  normal f)Do
-  normal p
   normal vi(=
-  normal k^
+  normal kf(%Do
+  normal p==%^
 endfunction
 command! RubyConvertMultiline call s:RubyConvertMultiline()
