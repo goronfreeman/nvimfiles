@@ -10,3 +10,14 @@ command! -bar -range RubyHashSyntaxToggle <line1>,<line2>call s:RubyHashSyntaxTo
 autocmd BufWritePre *.py :%s/\s\+$//e
 :au FocusLost * :wa
 
+function! s:RubyConvertMultiline()
+  normal ^f(lDo
+  normal p
+  execute 's/, /,\r/g'
+  normal f)Do
+  normal p
+  normal vi(=
+  normal k
+endfunction
+command! RubyConvertMultiline call s:RubyConvertMultiline()
+

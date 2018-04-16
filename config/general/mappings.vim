@@ -1,6 +1,7 @@
 let mapleader=","
-inoremap jk <ESC>
+inoremap jk <esc>
 nnoremap <leader>c :nohl<cr>
+nnoremap <leader>rcm :RubyConvertMultiline<cr>
 noremap <leader>rh :RubyHashSyntaxToggle<cr>
 
 " split navigation
