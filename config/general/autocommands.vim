@@ -17,7 +17,7 @@ function! s:RubyConvertMultiline()
   normal f)Do
   normal p
   normal vi(=
-  normal k
+  normal k^
 endfunction
 command! RubyConvertMultiline call s:RubyConvertMultiline()
 
