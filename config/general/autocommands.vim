@@ -20,4 +20,3 @@ function! s:RubyConvertMultiline()
   normal k^
 endfunction
 command! RubyConvertMultiline call s:RubyConvertMultiline()
-

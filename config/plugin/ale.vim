@@ -10,4 +10,3 @@ let g:ale_pattern_options = {
 \   'schema.rb': {'ale_enabled': 0},
 \   'structure.sql': {'ale_enabled': 0},
 \}
-
