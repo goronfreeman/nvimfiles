@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " themes
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'joshdick/onedark.vim'
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -12,7 +13,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'junegunn/vim-easy-align'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'rizzatti/dash.vim'
-Plug 'scrooloose/nerdtree'
 Plug 'thaerkh/vim-indentguides'
 Plug 'tmhedberg/matchit'
 Plug 'tomtom/tcomment_vim'
@@ -37,6 +37,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'kchmck/vim-coffee-script'
+Plug 'noprompt/vim-yardoc'
 Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
 Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
 Plug 'tpope/vim-endwise'
@@ -54,7 +55,7 @@ call plug#end()
 
 " set theme
 set background=dark
-colorscheme dracula
+colorscheme onedark
 set termguicolors
 syntax enable
 

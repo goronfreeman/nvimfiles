@@ -1,12 +1,12 @@
 " misc
-let mapleader=","
+let mapleader=" "
 inoremap jk <esc>
 nnoremap <leader>c :nohl<cr>
 nnoremap <leader>rcm :RubyConvertMultiline<cr>
 noremap <leader>rh :RubyHashSyntaxToggle<cr>
 nmap <leader>cf :ClearQuickfixList<cr>
 nmap <silent> <leader>d <Plug>DashSearch
-map <C-\> :NERDTreeToggle<cr>
+map <leader>e :Sexplore<cr>
 
 " FZF
 nmap <leader>a :Ag<Space>
