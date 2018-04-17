@@ -61,6 +61,7 @@ syntax enable
 " general
 set cursorline
 set fillchars+=vert:│ " vertical split character
+set inccommand=split
 set noshowmode " remove extra status line
 set nowrap
 set wildmenu
