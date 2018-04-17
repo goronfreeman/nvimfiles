@@ -1,4 +1,4 @@
-function ClearQuickfixList()
+function! ClearQuickfixList()
   call setqflist([])
 endfunction
 command! ClearQuickfixList call ClearQuickfixList()
@@ -7,7 +7,7 @@ function! DeleteTrailingWhitespace()
   exe "normal mz"
   %s/\s\+$//ge
   exe "normal `z"
-endfunc
+endfunction
 
 function! s:RubyHashSyntaxToggle() range
   if join(getline(a:firstline, a:lastline)) =~# '=>'
@@ -28,5 +28,6 @@ function! s:RubyConvertMultiline()
 endfunction
 command! RubyConvertMultiline call s:RubyConvertMultiline()
 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd BufWrite * :call DeleteTrailingWhitespace()
 :au FocusLost * :wa

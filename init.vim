@@ -11,6 +11,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'junegunn/vim-easy-align'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'rizzatti/dash.vim'
+Plug 'scrooloose/nerdtree'
 Plug 'thaerkh/vim-indentguides'
 Plug 'tmhedberg/matchit'
 Plug 'tomtom/tcomment_vim'
@@ -59,7 +61,7 @@ syntax enable
 " general
 set cursorline
 set fillchars+=vert:│ " vertical split character
-set noshowmode " remove extra status line 
+set noshowmode " remove extra status line
 set nowrap
 set wildmenu
 set sidescroll=1
