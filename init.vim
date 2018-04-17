@@ -1,15 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
-" themes
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'joshdick/onedark.vim'
-
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-
+" general
 Plug 'Raimondi/delimitMate'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'junegunn/vim-easy-align'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'rizzatti/dash.vim'
@@ -24,6 +16,10 @@ Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 
+" Deoplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'uplus/deoplete-solargraph'
+
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -32,6 +28,13 @@ Plug 'tpope/vim-rhubarb'
 " FZF
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+
+" markup
+Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss'] }
+Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'eruby'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'eruby'] }
+Plug 'othree/html5.vim', { 'for': ['html', 'javascript', 'eruby'] }
+Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 
 " Ruby
 Plug 'ecomba/vim-ruby-refactoring'
@@ -44,12 +47,16 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 
-" markup
-Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss'] }
-Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'eruby'] }
-Plug 'mattn/emmet-vim'
-Plug 'othree/html5.vim', { 'for': ['html', 'javascript', 'eruby'] }
-Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
+" text objects
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+
+" themes
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
