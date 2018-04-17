@@ -1,3 +1,14 @@
+function ClearQuickfixList()
+  call setqflist([])
+endfunction
+command! ClearQuickfixList call ClearQuickfixList()
+
+function! DeleteTrailingWhitespace()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+
 function! s:RubyHashSyntaxToggle() range
   if join(getline(a:firstline, a:lastline)) =~# '=>'
     silent! execute a:firstline . ',' . a:lastline . 's/[^{,]*[{,]\?\zs:\([^: ]\+\)\s*=>/\1:/g'
@@ -6,9 +17,6 @@ function! s:RubyHashSyntaxToggle() range
   endif
 endfunction
 command! -bar -range RubyHashSyntaxToggle <line1>,<line2>call s:RubyHashSyntaxToggle()
-
-autocmd BufWritePre *.py :%s/\s\+$//e
-:au FocusLost * :wa
 
 function! s:RubyConvertMultiline()
   normal ^f(lDo
@@ -19,3 +27,6 @@ function! s:RubyConvertMultiline()
   normal p==%^
 endfunction
 command! RubyConvertMultiline call s:RubyConvertMultiline()
+
+autocmd BufWrite * :call DeleteTrailingWhitespace()
+:au FocusLost * :wa

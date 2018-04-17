@@ -62,6 +62,7 @@ set fillchars+=vert:│ " vertical split character
 set noshowmode " remove extra status line 
 set nowrap
 set wildmenu
+set sidescroll=1
 
 " tab settings
 set ai
