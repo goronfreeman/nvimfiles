@@ -18,7 +18,7 @@ Plug 'w0rp/ale'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'uplus/deoplete-solargraph'
+Plug 'fishbullet/deoplete-ruby'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -32,7 +32,6 @@ Plug 'junegunn/fzf.vim'
 " markup
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'eruby'] }
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'eruby'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'javascript', 'eruby'] }
 Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 
@@ -40,8 +39,6 @@ Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'kchmck/vim-coffee-script'
-Plug 'noprompt/vim-yardoc'
-Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby'] }
 Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
