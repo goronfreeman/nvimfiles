@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 " general
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
+Plug 'justinmk/vim-sneak'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'rizzatti/dash.vim'
 Plug 'thaerkh/vim-indentguides'

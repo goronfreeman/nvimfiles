@@ -1,4 +1,5 @@
 let g:airline#extensions#ale#enabled = 1
+let g:ale_set_highlights = 0
 let g:ale_set_signs = 1
 let g:ale_fixers = {
 \   'ruby': ['rubocop'],
