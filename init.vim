@@ -65,6 +65,7 @@ set termguicolors
 syntax enable
 
 " general
+set colorcolumn=80
 set cursorline
 set fillchars+=vert:│ " vertical split character
 set inccommand=split

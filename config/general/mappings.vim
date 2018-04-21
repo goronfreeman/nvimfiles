@@ -8,6 +8,12 @@ nmap <leader>cf :ClearQuickfixList<cr>
 nmap <silent> <leader>d <Plug>DashSearch
 map <leader>e :Sexplore<cr>
 
+" clipboard
+nnoremap <leader>y "+y
+nnoremap <leader>yy "+yy
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+
 " FZF
 nmap <leader>a :Ag<Space>
 nmap <leader>b :Buffers<cr>
