@@ -6,6 +6,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'rizzatti/dash.vim'
+Plug 'sheerun/vim-polyglot'
 Plug 'thaerkh/vim-indentguides'
 Plug 'tmhedberg/matchit'
 Plug 'tomtom/tcomment_vim'
@@ -30,20 +31,12 @@ Plug 'tpope/vim-rhubarb'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-" markup
-Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss'] }
-Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'eruby'] }
-Plug 'othree/html5.vim', { 'for': ['html', 'javascript', 'eruby'] }
-Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'markdown', 'mkd.markdown'] }
-
 " Ruby
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
-Plug 'kchmck/vim-coffee-script'
 Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
-Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 
 " text objects
 Plug 'kana/vim-textobj-entire'
