@@ -38,6 +38,7 @@ set splitright
 
 " terminal
 nnoremap <C-K><C-T> :10sp<cr>:term<cr>
+tnoremap <esc> <C-\><C-N>
 tnoremap jk <C-\><C-N>
 
 " quickfix/location list

@@ -1,10 +1,12 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " general
-Plug 'Raimondi/delimitMate'
+Plug 'google/vim-searchindex'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'machakann/vim-highlightedyank'
+Plug 'raimondi/delimitmate'
 Plug 'rizzatti/dash.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
@@ -66,8 +68,10 @@ set fillchars+=vert:│ " vertical split character
 set inccommand=split
 set noshowmode " remove extra status line
 set nowrap
-set wildmenu
+set shortmess=I
 set sidescroll=1
+set spell spelllang=en_us
+set wildmenu
 
 " tab settings
 set ai
