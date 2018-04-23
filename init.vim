@@ -6,6 +6,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'rizzatti/dash.vim'
+Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'thaerkh/vim-indentguides'
 Plug 'tmhedberg/matchit'
@@ -58,6 +59,7 @@ set termguicolors
 syntax enable
 
 " general
+set clipboard+=unnamedplus
 set colorcolumn=80
 set cursorline
 set fillchars+=vert:│ " vertical split character
