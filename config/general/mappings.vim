@@ -26,7 +26,7 @@ nmap <leader>/ :History/<cr>
 nnoremap <C-P> :FZF<cr>
 
 " NERDTree
-map <C-B> :NERDTreeToggle<cr>
+map <C-\> :NERDTreeToggle<cr>
 
 " split navigation
 nnoremap <C-J> <C-W><C-J>
