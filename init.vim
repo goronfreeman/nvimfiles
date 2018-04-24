@@ -49,7 +49,6 @@ Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 
 " themes
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'joshdick/onedark.vim'
 
 call plug#end()
