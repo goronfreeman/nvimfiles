@@ -23,7 +23,7 @@ Plug 'w0rp/ale'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'fishbullet/deoplete-ruby'
+" Plug 'fishbullet/deoplete-ruby'
 
 " Git
 Plug 'airblade/vim-gitgutter'
