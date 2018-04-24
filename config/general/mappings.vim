@@ -24,6 +24,8 @@ nmap <leader>C :Commands<cr>
 nmap <leader>: :History:<cr>
 nmap <leader>/ :History/<cr>
 nnoremap <C-P> :FZF<cr>
+" search for word under cursor
+nnoremap <silent> <leader>A :Ag <C-R><C-W><CR>
 
 " NERDTree
 map <C-\> :NERDTreeToggle<cr>
