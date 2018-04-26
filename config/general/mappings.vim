@@ -38,6 +38,10 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+" RSpec
+map <leader>S :call RunCurrentSpecFile()<CR>
+map <leader>s :call RunNearestSpec()<CR>
+
 " terminal
 nnoremap <C-T><C-T> :10sp<cr>:term<cr>
 tnoremap <esc> <C-\><C-N>

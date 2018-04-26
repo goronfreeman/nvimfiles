@@ -14,7 +14,6 @@ Plug 'thaerkh/vim-indentguides'
 Plug 'tmhedberg/matchit'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -23,7 +22,6 @@ Plug 'w0rp/ale'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'fishbullet/deoplete-ruby'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -37,9 +35,13 @@ Plug 'junegunn/fzf.vim'
 " Ruby
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
-Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
+
+" testing
+Plug 'radenling/vim-dispatch-neovim'
+Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
+Plug 'tpope/vim-dispatch'
 
 " text objects
 Plug 'kana/vim-textobj-entire'
@@ -61,7 +63,7 @@ syntax enable
 
 " general
 set clipboard+=unnamedplus
-set colorcolumn=80
+set colorcolumn=110
 set cursorline
 set fillchars+=vert:│ " vertical split character
 set inccommand=split
