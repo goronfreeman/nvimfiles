@@ -9,5 +9,5 @@ function! DeleteTrailingWhitespace()
   exe "normal `z"
 endfunction
 
-autocmd BufWrite * :call DeleteTrailingWhitespace()
-:au FocusLost * :wa
+au BufWrite * :call DeleteTrailingWhitespace()
+au BufLeave,FocusLost * silent! wa
