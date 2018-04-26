@@ -28,7 +28,7 @@ nnoremap <C-P> :FZF<cr>
 nnoremap <silent> <leader>A :Ag <C-R><C-W><CR>
 
 " NERDTree
-map <C-\> :NERDTreeToggle<cr>
+map <leader>e :NERDTreeToggle<cr>
 
 " split navigation
 nnoremap <C-J> <C-W><C-J>
