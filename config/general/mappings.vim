@@ -1,34 +1,34 @@
 " misc
-let mapLeader=" "
+let mapleader=" "
 inoremap jk <ESC>
 nnoremap <C-n> :nohl<CR>
 nnoremap <CR> o<ESC>
-nnoremap <Leader>o o<ESC>
-nnoremap <Leader>O O<ESC>
-nmap <Leader>cf :ClearQuickfixList<CR>
-nmap <silent> <Leader>d <Plug>DashSearch
+nnoremap <leader>o o<ESC>
+nnoremap <leader>O O<ESC>
+nmap <leader>cf :ClearQuickfixList<CR>
+nmap <silent> <leader>d <Plug>DashSearch
 
 " FZF
-nmap <Leader>a :Ag<Space>
-nmap <Leader>b :Buffers<CR>
-nmap <Leader>f :GFiles<CR>
-nmap <Leader>F :Files<CR>
-nmap <Leader>h :History<CR>
-nmap <Leader>l :BLines<CR>
-nmap <Leader>L :Lines<CR>
-nmap <Leader>t :BTags<CR>
-nmap <Leader>T :Tags<CR>
-nmap <Leader>' :Marks<CR>
-nmap <Leader>H :Helptags!<CR>
-nmap <Leader>C :Commands<CR>
-nmap <Leader>: :History:<CR>
-nmap <Leader>/ :History/<CR>
+nmap <leader>a :Ag<Space>
+nmap <leader>b :Buffers<CR>
+nmap <leader>f :GFiles<CR>
+nmap <leader>F :Files<CR>
+nmap <leader>h :History<CR>
+nmap <leader>l :BLines<CR>
+nmap <leader>L :Lines<CR>
+nmap <leader>t :BTags<CR>
+nmap <leader>T :Tags<CR>
+nmap <leader>' :Marks<CR>
+nmap <leader>H :Helptags!<CR>
+nmap <leader>C :Commands<CR>
+nmap <leader>: :History:<CR>
+nmap <leader>/ :History/<CR>
 nnoremap <C-p> :FZF<CR>
 " search for word under cursor
-nnoremap <silent> <Leader>A :Ag <C-R><C-W><CR>
+nnoremap <silent> <leader>A :Ag <C-r><C-w><CR>
 
 " NERDTree
-map <Leader>e :NERDTreeToggle<CR>
+map <silent> <leader>e :NERDTreeToggle<CR>
 
 " split navigation
 nnoremap <C-j> <C-w><C-j>
