@@ -1,54 +1,57 @@
 " misc
-let mapleader=" "
-inoremap jk <esc>
-nnoremap <C-N> :nohl<cr>
-nnoremap <cr> o<esc>
-nnoremap <leader>o o<esc>
-nnoremap <leader>O O<esc>
-nmap <leader>cf :ClearQuickfixList<cr>
-nmap <silent> <leader>d <Plug>DashSearch
+let mapLeader=" "
+inoremap jk <ESC>
+nnoremap <C-n> :nohl<CR>
+nnoremap <CR> o<ESC>
+nnoremap <Leader>o o<ESC>
+nnoremap <Leader>O O<ESC>
+nmap <Leader>cf :ClearQuickfixList<CR>
+nmap <silent> <Leader>d <Plug>DashSearch
 
 " FZF
-nmap <leader>a :Ag<Space>
-nmap <leader>b :Buffers<cr>
-nmap <leader>f :GFiles<cr>
-nmap <leader>F :Files<cr>
-nmap <leader>h :History<cr>
-nmap <leader>l :BLines<cr>
-nmap <leader>L :Lines<cr>
-nmap <leader>t :BTags<cr>
-nmap <leader>T :Tags<cr>
-nmap <leader>' :Marks<cr>
-nmap <leader>H :Helptags!<cr>
-nmap <leader>C :Commands<cr>
-nmap <leader>: :History:<cr>
-nmap <leader>/ :History/<cr>
-nnoremap <C-P> :FZF<cr>
+nmap <Leader>a :Ag<Space>
+nmap <Leader>b :Buffers<CR>
+nmap <Leader>f :GFiles<CR>
+nmap <Leader>F :Files<CR>
+nmap <Leader>h :History<CR>
+nmap <Leader>l :BLines<CR>
+nmap <Leader>L :Lines<CR>
+nmap <Leader>t :BTags<CR>
+nmap <Leader>T :Tags<CR>
+nmap <Leader>' :Marks<CR>
+nmap <Leader>H :Helptags!<CR>
+nmap <Leader>C :Commands<CR>
+nmap <Leader>: :History:<CR>
+nmap <Leader>/ :History/<CR>
+nnoremap <C-p> :FZF<CR>
 " search for word under cursor
-nnoremap <silent> <leader>A :Ag <C-R><C-W><CR>
+nnoremap <silent> <Leader>A :Ag <C-R><C-W><CR>
 
 " NERDTree
-map <leader>e :NERDTreeToggle<cr>
+map <Leader>e :NERDTreeToggle<CR>
 
 " split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+nnoremap <C-h> <C-w><C-h>
 set splitbelow
 set splitright
 
 " RSpec
-map <leader>S :call RunCurrentSpecFile()<CR>
-map <leader>s :call RunNearestSpec()<CR>
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
 
 " terminal
-nnoremap <C-T><C-T> :10sp<cr>:term<cr>
-tnoremap <esc> <C-\><C-N>
-tnoremap jk <C-\><C-N>
+nnoremap <C-t><C-t> :10sp<CR>:term<cr>
+tnoremap <ESC> <C-\><C-n>
+tnoremap jk <C-\><C-n>
 
 " quickfix/location list
-nnoremap ][q :copen<cr>
-nnoremap []q :cclose<cr>
-nnoremap ][l :lopen<cr>
-nnoremap []l :lclose<cr>
+nnoremap ][q :copen<CR>
+nnoremap []q :cclose<CR>
+nnoremap ][l :lopen<CR>
+nnoremap []l :lclose<CR>
