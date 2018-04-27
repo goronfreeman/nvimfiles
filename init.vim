@@ -39,8 +39,8 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 
 " testing
+Plug 'janko-m/vim-test'
 Plug 'radenling/vim-dispatch-neovim'
-Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
 Plug 'tpope/vim-dispatch'
 
 " text objects
