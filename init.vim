@@ -63,7 +63,7 @@ syntax enable
 
 " general
 set clipboard+=unnamedplus
-set colorcolumn=110
+set colorcolumn=80
 set cursorline
 set fillchars+=vert:│ " vertical split character
 set inccommand=split
