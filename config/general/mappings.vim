@@ -27,6 +27,10 @@ nnoremap <C-p> :FZF<CR>
 " search for word under cursor
 nnoremap <silent> <leader>A :Ag <C-r><C-w><CR>
 
+" GitGutter
+nmap ]c <Plug>GitGutterNextHunk
+nmap [c <Plug>GitGutterPrevHunk
+
 " NERDTree
 map <silent> <leader>e :NERDTreeToggle<CR>
 
