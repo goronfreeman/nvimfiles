@@ -2,7 +2,6 @@
 let mapleader=" "
 inoremap jk <ESC>
 nnoremap <C-n> :nohl<CR>
-nnoremap <CR> o<ESC>
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
 nmap <leader>cf :ClearQuickfixList<CR>
