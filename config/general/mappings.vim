@@ -7,6 +7,13 @@ nnoremap <leader>O O<ESC>
 nmap <leader>cf :ClearQuickfixList<CR>
 nmap <silent> <leader>d <Plug>DashSearch
 
+" fugitive
+nmap <leader>gb :Gblame<CR>
+nmap <leader>gg :Gbrowse<CR>
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gc :Gcommit<CR>
+nmap <leader>ga :Git add .<CR>
+
 " FZF
 nmap <leader>a :Ag<Space>
 nmap <leader>b :Buffers<CR>
@@ -30,8 +37,14 @@ nnoremap <silent> <leader>A :Ag <C-r><C-w><CR>
 nmap ]c <Plug>GitGutterNextHunk
 nmap [c <Plug>GitGutterPrevHunk
 
-" NERDTree
-map <silent> <leader>e :NERDTreeToggle<CR>
+" ranger
+map <leader>rr :RangerEdit<cr>
+map <leader>rv :RangerVSplit<cr>
+map <leader>rs :RangerSplit<cr>
+map <leader>rt :RangerTab<cr>
+map <leader>ri :RangerInsert<cr>
+map <leader>ra :RangerAppend<cr>
+map <leader>rc :set operatorfunc=RangerChangeOperator<cr>g@
 
 " split navigation
 nnoremap <C-j> <C-w><C-j>
@@ -51,7 +64,6 @@ nmap <silent> t<C-g> :TestVisit<CR>
 " terminal
 nnoremap <C-t><C-t> :10sp<CR>:term<cr>
 tnoremap <ESC> <C-\><C-n>
-tnoremap jk <C-\><C-n>
 
 " quickfix/location list
 nnoremap ][q :copen<CR>
