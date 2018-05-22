@@ -65,6 +65,7 @@ set colorcolumn=80
 set cursorline
 set fillchars+=vert:│ " vertical split character
 set inccommand=split
+set lazyredraw
 set noshowmode " remove extra status line
 set nowrap
 set shortmess=I
