@@ -11,3 +11,4 @@ endfunction
 
 au BufWrite * :call DeleteTrailingWhitespace()
 au BufLeave,FocusLost * silent! wa
+au FileType html EmmetInstall

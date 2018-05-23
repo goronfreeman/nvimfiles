@@ -11,7 +11,6 @@ Plug 'raimondi/delimitmate'
 Plug 'rizzatti/dash.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'thaerkh/vim-indentguides'
-Plug 'tmhedberg/matchit'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -30,6 +29,10 @@ Plug 'tpope/vim-rhubarb'
 " FZF
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+
+" markup
+Plug 'alvan/vim-closetag'
+Plug 'mattn/emmet-vim'
 
 " Ruby
 Plug 'ecomba/vim-ruby-refactoring'
