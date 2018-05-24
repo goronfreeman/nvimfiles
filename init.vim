@@ -69,6 +69,7 @@ set cursorline
 set fillchars+=vert:│ " vertical split character
 set inccommand=split
 set lazyredraw
+set mouse=n
 set noshowmode " remove extra status line
 set nowrap
 set shortmess=I
