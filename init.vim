@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " general
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'google/vim-searchindex'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
