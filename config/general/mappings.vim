@@ -1,7 +1,7 @@
 " misc
 let mapleader=" "
 inoremap jk <ESC>
-nnoremap <C-n> :nohl<CR>
+nnoremap <silent> <C-n> :nohl<CR>
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
 nmap <leader>cf :ClearQuickfixList<CR>
@@ -12,7 +12,6 @@ nmap <leader>gb :Gblame<CR>
 nmap <leader>gg :Gbrowse<CR>
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gc :Gcommit<CR>
-nmap <leader>ga :Git add .<CR>
 
 " FZF
 nmap <leader>a :Ag<Space>
