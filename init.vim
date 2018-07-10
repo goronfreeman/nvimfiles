@@ -79,24 +79,26 @@ set sidescroll=1
 set spell spelllang=en_us
 set wildmenu
 
-" tab settings
-set ai
-set et
-set sta
-set sts=2
-set sw=2
-set ts=2
+" line numbers
+set number
+set numberwidth=2
+set relativenumber
+set ruler
 
 " searching
 set ignorecase
 set showmatch
 set smartcase
 
-" line numbers
-set number
-set numberwidth=2
-set relativenumber
-set ruler
+" show invisibles
+set list
+set listchars=tab:￫\ ,eol:¬,trail:·,extends:»,precedes:«,nbsp:␣
+
+" tab settings
+set autoindent
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 for f in split(glob('~/.config/nvim/config/general/*.vim'), '\n')
   exe 'source' f
