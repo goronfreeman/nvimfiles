@@ -19,6 +19,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'w0rp/ale'
 
 " Deoplete
@@ -73,7 +74,6 @@ set cursorline
 set fillchars+=vert:│ " vertical split character
 set inccommand=split
 set lazyredraw
-set mouse=n
 set noshowmode " remove extra status line
 set nowrap
 set shortmess=I
