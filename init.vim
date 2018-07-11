@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " general
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Yggdroot/indentLine'
 Plug 'bradford-smith94/quick-scope'
 Plug 'google/vim-searchindex'
 Plug 'junegunn/vim-easy-align'
@@ -14,7 +15,6 @@ Plug 'raimondi/delimitmate'
 Plug 'rizzatti/dash.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'simeji/winresizer'
-Plug 'thaerkh/vim-indentguides'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
