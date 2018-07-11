@@ -62,7 +62,7 @@ nmap <silent> t<C-g> :TestVisit<CR>
 
 " terminal
 nnoremap <C-t><C-t> :10sp<CR>:term<cr>
-tnoremap <leader><ESC> <C-\><C-n>
+tnoremap <C-\> <C-\><C-n>
 
 " quickfix/location list
 nnoremap ][q :copen<CR>
