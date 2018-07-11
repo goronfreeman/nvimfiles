@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " general
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'bradford-smith94/quick-scope'
 Plug 'google/vim-searchindex'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'

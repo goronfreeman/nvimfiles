@@ -37,13 +37,13 @@ nmap ]c <Plug>GitGutterNextHunk
 nmap [c <Plug>GitGutterPrevHunk
 
 " ranger
-map <leader>rr :RangerEdit<cr>
-map <leader>rv :RangerVSplit<cr>
-map <leader>rs :RangerSplit<cr>
-map <leader>rt :RangerTab<cr>
-map <leader>ri :RangerInsert<cr>
-map <leader>ra :RangerAppend<cr>
-map <leader>rc :set operatorfunc=RangerChangeOperator<cr>g@
+map <leader>rr :RangerEdit<CR>
+map <leader>rv :RangerVSplit<CR>
+map <leader>rs :RangerSplit<CR>
+map <leader>rt :RangerTab<CR>
+map <leader>ri :RangerInsert<CR>
+map <leader>ra :RangerAppend<CR>
+map <leader>rc :set operatorfunc=RangerChangeOperator<CR>g@
 
 " split navigation
 nnoremap <C-j> <C-w><C-j>
@@ -61,7 +61,6 @@ nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
 
 " terminal
-nnoremap <C-t><C-t> :10sp<CR>:term<cr>
 tnoremap <C-\> <C-\><C-n>
 
 " quickfix/location list
