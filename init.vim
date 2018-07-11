@@ -7,6 +7,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'machakann/vim-highlightedyank'
+Plug 'machakann/vim-sandwich'
 Plug 'rafaqz/ranger.vim'
 Plug 'raimondi/delimitmate'
 Plug 'rizzatti/dash.vim'
@@ -14,7 +15,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'thaerkh/vim-indentguides'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
@@ -92,7 +92,7 @@ set smartcase
 
 " show invisibles
 set list
-set listchars=tab:￫\ ,eol:¬,trail:·,extends:»,precedes:«,nbsp:␣
+set listchars=eol:¬,tab:￫\ ,trail:·,extends:»,precedes:«,nbsp:␣
 
 " tab settings
 set autoindent
