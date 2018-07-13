@@ -9,6 +9,7 @@ function! DeleteTrailingWhitespace()
   exe "normal `z"
 endfunction
 
-au BufWrite * :call DeleteTrailingWhitespace()
-au BufLeave,FocusLost * silent! wa
-au FileType html EmmetInstall
+autocmd BufWrite * :call DeleteTrailingWhitespace()
+autocmd BufRead,BufNewFile *.md, *.txt setlocal spell
+autocmd BufLeave,FocusLost * silent! wa
+autocmd FileType html EmmetInstall

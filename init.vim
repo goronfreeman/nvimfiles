@@ -71,6 +71,7 @@ syntax enable
 " general
 set clipboard+=unnamedplus
 set colorcolumn=80
+set complete+=kspell " Autocomplete with dictionary words when spell check is on
 set cursorline
 set fillchars+=vert:│ " vertical split character
 set inccommand=split
@@ -79,7 +80,6 @@ set noshowmode " remove extra status line
 set nowrap
 set shortmess=I
 set sidescroll=1
-set spell spelllang=en_us
 set wildmenu
 
 " line numbers
@@ -100,6 +100,7 @@ set listchars=eol:¬,tab:￫\ ,trail:·,extends:»,precedes:«,nbsp:␣
 " tab settings
 set autoindent
 set expandtab
+set shiftround
 set shiftwidth=2
 set softtabstop=2
 
