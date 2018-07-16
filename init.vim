@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 " general
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Yggdroot/indentLine'
+Plug 'andymass/vim-tradewinds'
 Plug 'bradford-smith94/quick-scope'
 Plug 'google/vim-searchindex'
 Plug 'junegunn/vim-easy-align'
