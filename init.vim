@@ -79,6 +79,7 @@ set inccommand=split
 set lazyredraw
 set noshowmode " remove extra status line
 set nowrap
+set mouse=a
 set shortmess=I
 set sidescroll=1
 set wildmenu
