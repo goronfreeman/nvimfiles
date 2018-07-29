@@ -12,4 +12,4 @@ endfunction
 autocmd BufWrite * :call DeleteTrailingWhitespace()
 autocmd BufRead,BufNewFile *.md, *.txt setlocal spell
 autocmd BufLeave,FocusLost * silent! wa
-autocmd FileType html EmmetInstall
+autocmd FileType html,eruby EmmetInstall
