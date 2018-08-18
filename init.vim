@@ -60,7 +60,6 @@ Plug 'kana/vim-textobj-user'
 
 " themes
 Plug 'arcticicestudio/nord-vim'
-Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
