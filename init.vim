@@ -70,6 +70,7 @@ set termguicolors                                               " Enable 24-bit 
 syntax enable                                                   " Enable syntax highlighting
 
 " general
+set autoread                                                    " Reload files changed outside Vim
 set clipboard+=unnamedplus                                      " Use system clipboard
 set colorcolumn=80                                              " Show line length ruler
 set complete+=kspell                                            " Autocomplete with dictionary words when spell check is on
@@ -105,6 +106,12 @@ set expandtab                                                   " Use the approp
 set shiftround                                                  " Round indent to multiple of 'shiftwidth'
 set shiftwidth=2                                                " Number of spaces to use for each step of indent
 set softtabstop=2                                               " Number of spaces that a <Tab> counts for
+
+" undo settings
+set undodir=$HOME/.config/nvim/undo                             " Set persistent undodir path
+set undofile                                                    " Write changes to the undofile
+set undolevels=1000                                             " Max changes that can be undone
+set undoreload=10000                                            " Max lines to save for undo on buffer reload
 
 for f in split(glob('~/.config/nvim/config/general/*.vim'), '\n')
   exe 'source' f
