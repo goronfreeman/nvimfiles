@@ -2,7 +2,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 " general
 Plug 'AndrewRadev/splitjoin.vim'                                " Switch between single-line and multi-line statements
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " Asynchronous completion
 Plug 'Yggdroot/indentLine'                                      " Display the indention levels with thin vertical lines
+Plug 'andreyorst/SimpleWorkspaces.vim'                          " Visual Studio Code like workspace support
 Plug 'andymass/vim-tradewinds'                                  " Easy window movement
 Plug 'bradford-smith94/quick-scope'                             " Highlight which characters to target for inline movement
 Plug 'google/vim-searchindex'                                   " Display search match count
@@ -11,6 +13,7 @@ Plug 'justinmk/vim-sneak'                                       " Jump to any lo
 Plug 'ludovicchabant/vim-gutentags'                             " Tag file management
 Plug 'machakann/vim-highlightedyank'                            " Briefly highlight text that was yanked
 Plug 'machakann/vim-sandwich'                                   " Add/delete/replace surroundings of a sandwiched text object
+Plug 'mtth/scratch.vim'                                         " Unobtrusive scratch window
 Plug 'rafaqz/ranger.vim'                                        " File explorer
 Plug 'raimondi/delimitmate'                                     " Auto-completion for quotes, parens, brackets, etc.
 Plug 'rizzatti/dash.vim'                                        " Look up documentation using Dash
@@ -24,9 +27,6 @@ Plug 'tyru/open-browser.vim'                                    " Open URL under
 Plug 'vim-airline/vim-airline'                                  " Statusline
 Plug 'vim-scripts/ReplaceWithRegister'                          " Replace text object with contents of register
 Plug 'w0rp/ale'                                                 " Asynchronous linting
-
-" Deoplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " Asynchronous completion
 
 " Git
 Plug 'airblade/vim-gitgutter'                                   " Show git diff in the gutter
@@ -64,8 +64,7 @@ Plug 'arcticicestudio/nord-vim'                                 " An arctic, nor
 call plug#end()
 
 " set theme
-set background=dark                                             " Set nord background color
-colorscheme nord                                                " Set nord colorscheme
+set background=dark                                             " Set colorscheme background color
 set termguicolors                                               " Enable 24-bit color
 syntax enable                                                   " Enable syntax highlighting
 
@@ -76,12 +75,13 @@ set colorcolumn=80                                              " Show line leng
 set complete+=kspell                                            " Autocomplete with dictionary words when spell check is on
 set cursorline                                                  " Highlight the line the cursor is on
 set fillchars+=vert:│                                           " Set the vertical split character
+set hidden                                                      " Hide modified buffers instead of closing
 set inccommand=split                                            " Enable preview split for substitution
 set lazyredraw                                                  " Increase performance of screen drawing
 set noshowmode                                                  " Remove extra status line
 set nowrap                                                      " Don't wrap lines
 set mouse=a                                                     " Enable mouse in all modes
-set shortmess=I                                                 " Don't show the intro message when starting Vim
+set shortmess=IF                                                " Don't show the intro message when starting Vim
 set sidescroll=1                                                " Scroll one character at a time when moving horizontally"
 set wildmenu                                                    " Enable autocomplete menu
 
