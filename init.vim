@@ -81,7 +81,7 @@ set lazyredraw                                                  " Increase perfo
 set noshowmode                                                  " Remove extra status line
 set nowrap                                                      " Don't wrap lines
 set mouse=a                                                     " Enable mouse in all modes
-set shortmess=IF                                                " Don't show the intro message when starting Vim
+set shortmess=tIF                                                " Don't show the intro message when starting Vim
 set sidescroll=1                                                " Scroll one character at a time when moving horizontally"
 set wildmenu                                                    " Enable autocomplete menu
 
