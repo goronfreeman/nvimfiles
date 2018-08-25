@@ -61,6 +61,10 @@ Plug 'nelstrom/vim-textobj-rubyblock'                           " A custom text 
 " themes
 Plug 'arcticicestudio/nord-vim'                                 " An arctic, north-bluish clean and elegant Vim theme
 
+" tmux
+Plug 'christoomey/vim-tmux-navigator'                           " Seamless navigation between tmux panes and vim splits
+Plug 'tmux-plugins/vim-tmux-focus-events'                       " Make terminal vim and tmux work better together
+
 call plug#end()
 
 " set theme
