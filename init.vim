@@ -6,7 +6,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " Asynchronous c
 Plug 'Yggdroot/indentLine'                                      " Display the indention levels with thin vertical lines
 Plug 'andreyorst/SimpleWorkspaces.vim'                          " Visual Studio Code like workspace support
 Plug 'andymass/vim-tradewinds'                                  " Easy window movement
-Plug 'bradford-smith94/quick-scope'                             " Highlight which characters to target for inline movement
 Plug 'google/vim-searchindex'                                   " Display search match count
 Plug 'junegunn/vim-easy-align'                                  " Align lines by a specific character
 Plug 'justinmk/vim-sneak'                                       " Jump to any location specified by two characters
@@ -82,10 +81,11 @@ set fillchars+=vert:│                                           " Set the vert
 set hidden                                                      " Hide modified buffers instead of closing
 set inccommand=split                                            " Enable preview split for substitution
 set lazyredraw                                                  " Increase performance of screen drawing
+set nofoldenable                                                " Disable folding by default
 set noshowmode                                                  " Remove extra status line
 set nowrap                                                      " Don't wrap lines
 set mouse=a                                                     " Enable mouse in all modes
-set shortmess=tIF                                                " Don't show the intro message when starting Vim
+set shortmess=tIF                                               " Don't show the intro message when starting Vim
 set sidescroll=1                                                " Scroll one character at a time when moving horizontally"
 set wildmenu                                                    " Enable autocomplete menu
 
