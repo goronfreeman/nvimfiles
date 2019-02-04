@@ -7,6 +7,10 @@ nnoremap <leader>O O<ESC>
 nmap <leader>cf :ClearQuickfixList<CR>
 nmap <silent> <leader>d <Plug>DashSearch
 
+" ALE
+" nmap <silent> <leader>ak :ALEPrevious<CR>
+" nmap <silent> <leader>aj :ALENext<CR>
+
 " fugitive
 nmap <leader>gb :Gblame<CR>
 nmap <leader>gg :Gbrowse<CR>
@@ -14,7 +18,7 @@ nmap <leader>gs :Gstatus<CR>
 nmap <leader>gc :Gcommit<CR>
 
 " FZF
-nmap <leader>a :Ag<Space>
+nmap <leader>a :Rg<Space>
 nmap <leader>b :Buffers<CR>
 nmap <leader>f :GFiles<CR>
 nmap <leader>F :Files<CR>
@@ -30,7 +34,7 @@ nmap <leader>: :History:<CR>
 nmap <leader>/ :History/<CR>
 nnoremap <C-p> :FZF<CR>
 " search for word under cursor
-nnoremap <silent> <leader>A :Ag <C-r><C-w><CR>
+nnoremap <silent> <leader>A :Rg <C-r><C-w><CR>
 
 " GitGutter
 nmap ]c <Plug>GitGutterNextHunk
