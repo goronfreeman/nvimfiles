@@ -45,6 +45,9 @@ Plug 'joker1007/vim-ruby-heredoc-syntax'                                " Syntax
 Plug 'tpope/vim-endwise'                                                " Automatically close Ruby blocks and more
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }                    " RoR tools
 
+" Rust
+Plug 'rust-lang/rust.vim'
+
 " testing
 Plug 'janko-m/vim-test'                                                 " Test runner
 Plug 'radenling/vim-dispatch-neovim'                                    " Add support for neovim's terminal emulator and job control to dispatch.vim
