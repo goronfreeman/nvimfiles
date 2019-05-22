@@ -67,6 +67,9 @@ nmap <silent> t<C-g> :TestVisit<CR>
 " terminal
 tnoremap <C-\> <C-\><C-n>
 
+" undotree
+nnoremap <leader>u :UndotreeToggle<CR>
+
 " quickfix/location list
 nnoremap ][q :copen<CR>
 nnoremap []q :cclose<CR>

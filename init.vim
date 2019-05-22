@@ -11,6 +11,7 @@ Plug 'justinmk/vim-sneak'                                               " Jump t
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
 Plug 'machakann/vim-highlightedyank'                                    " Briefly highlight text that was yanked
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
+Plug 'mbbill/undotree'                                                  " Undo history visualizer
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}            " Auto-completion
 Plug 'rafaqz/ranger.vim'                                                " File explorer
 Plug 'raimondi/delimitmate'                                             " Auto-completion for quotes, parens, brackets, etc.
