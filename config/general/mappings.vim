@@ -11,6 +11,11 @@ nmap <silent> <leader>d <Plug>DashSearch
 " nmap <silent> <leader>ak :ALEPrevious<CR>
 " nmap <silent> <leader>aj :ALENext<CR>
 
+" CoC
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <leader>rn <Plug>(coc-rename)
+
 " fugitive
 nmap <leader>gb :Gblame<CR>
 nmap <leader>gg :Gbrowse<CR>
