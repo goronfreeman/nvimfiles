@@ -91,7 +91,7 @@ set noshowmode                                                          " Remove
 set nowrap                                                              " Don't wrap lines
 set mouse=a                                                             " Enable mouse in all modes
 set shortmess=tIF                                                       " Don't show the intro message when starting Vim
-set sidescroll=1                                                        " Scroll one character at a time when moving horizontally"
+set sidescroll=1                                                        " Scroll one character at a time when moving horizontally
 set wildmenu                                                            " Enable autocomplete menu
 
 " line numbers
@@ -111,7 +111,7 @@ set listchars=eol:¬,tab:￫\ ,trail:·,extends:»,precedes:«,nbsp:␣         
 
 " tab settings
 set autoindent                                                          " Copy indent from current line when starting a new line
-set expandtab                                                           " Use the appropriate number of spaces to insert a <Tan>
+set expandtab                                                           " Use the appropriate number of spaces to insert a <Tab>
 set shiftround                                                          " Round indent to multiple of 'shiftwidth'
 set shiftwidth=2                                                        " Number of spaces to use for each step of indent
 set softtabstop=2                                                       " Number of spaces that a <Tab> counts for
