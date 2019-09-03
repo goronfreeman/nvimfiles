@@ -3,7 +3,6 @@ call plug#begin('~/.config/nvim/plugged')
 " general
 Plug 'AndrewRadev/splitjoin.vim'                                        " Switch between single-line and multi-line statements
 Plug 'Yggdroot/indentLine'                                              " Display the indention levels with thin vertical lines
-Plug 'andreyorst/SimpleWorkspaces.vim'                                  " Visual Studio Code like workspace support
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'google/vim-searchindex'                                           " Display search match count
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
