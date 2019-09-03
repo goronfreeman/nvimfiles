@@ -7,10 +7,6 @@ nnoremap <leader>O O<ESC>
 nmap <leader>cf :ClearQuickfixList<CR>
 nmap <silent> <leader>d <Plug>DashSearch
 
-" ALE
-" nmap <silent> <leader>ak :ALEPrevious<CR>
-" nmap <silent> <leader>aj :ALENext<CR>
-
 " CoC
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 nmap <silent> gd <Plug>(coc-definition)
