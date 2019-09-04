@@ -5,7 +5,7 @@ nnoremap <silent> <C-n> :nohl<CR>
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
 nmap <leader>cf :ClearQuickfixList<CR>
-nmap <silent> <leader>d <Plug>DashSearch
+nmap <silent> <leader>d <Plug>(DashSearch)
 
 " CoC
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -38,8 +38,8 @@ nnoremap <C-p> :FZF<CR>
 nnoremap <silent> <leader>A :Rg <C-r><C-w><CR>
 
 " GitGutter
-nmap ]c <Plug>GitGutterNextHunk
-nmap [c <Plug>GitGutterPrevHunk
+nmap ]c <Plug>(GitGutterNextHunk)
+nmap [c <Plug>(GitGutterPrevHunk)
 
 " ranger
 map <leader>rr :RangerEdit<CR>
