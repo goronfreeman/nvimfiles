@@ -128,5 +128,3 @@ endfor
 for f in split(glob('~/.config/nvim/config/plugin/*.vim'), '\n')
   exe 'source' f
 endfor
-
-silent! so .vimlocal
