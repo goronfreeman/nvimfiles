@@ -1,1 +1,1 @@
-let g:Hexokinase_ftAutoload = ['css', 'scss']
+let g:Hexokinase_ftEnabled = ['css', 'scss', 'sass', 'html', 'javascript']
