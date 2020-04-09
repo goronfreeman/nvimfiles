@@ -33,7 +33,7 @@ Plug 'tpope/vim-fugitive'                                               " Git wr
 Plug 'tpope/vim-rhubarb'                                                " GitHub extension for fugitive.vim
 
 " FZF
-Plug '/usr/local/opt/fzf'                                               " A command-line fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                     " A command-line fuzzy finder
 Plug 'junegunn/fzf.vim'                                                 " FZF wrapper for Vim
 
 " markup
