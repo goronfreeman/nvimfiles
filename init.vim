@@ -8,6 +8,7 @@ Plug 'google/vim-searchindex'                                           " Displa
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
 Plug 'justinmk/vim-sneak'                                               " Jump to any location specified by two characters
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
+Plug 'lukas-reineke/indent-blankline.nvim'                              " Indent guides on blank lines
 Plug 'machakann/vim-highlightedyank'                                    " Briefly highlight text that was yanked
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
 Plug 'mbbill/undotree'                                                  " Undo history visualizer
