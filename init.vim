@@ -6,7 +6,6 @@ Plug 'Yggdroot/indentLine'                                              " Displa
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'google/vim-searchindex'                                           " Display search match count
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
-Plug 'justinmk/vim-sneak'                                               " Jump to any location specified by two characters
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
 Plug 'lukas-reineke/indent-blankline.nvim'                              " Indent guides on blank lines
 Plug 'machakann/vim-highlightedyank'                                    " Briefly highlight text that was yanked
