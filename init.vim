@@ -6,7 +6,6 @@ Plug 'SirVer/ultisnips'                                                 " Snippe
 Plug 'Yggdroot/indentLine'                                              " Display the indention levels with thin vertical lines
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'google/vim-searchindex'                                           " Display search match count
-Plug 'honza/vim-snippets'                                               " Snippets
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
 Plug 'lukas-reineke/indent-blankline.nvim'                              " Indent guides on blank lines

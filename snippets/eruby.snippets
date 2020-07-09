@@ -1,0 +1,51 @@
+snippet #
+<%# ${0} %>
+endsnippet
+
+snippet -
+<% ${0} %>
+endsnippet
+
+snippet =
+<%= ${1} %>
+endsnippet
+
+snippet ead
+<% ${1:collection}.each do |${2:item}| %>
+  ${0}
+<% end %>
+endsnippet
+
+snippet if
+<% if ${1:condition} %>
+  ${0}
+<% end %>
+endsnippet
+
+snippet ife
+<% if ${1:condition} %>
+  ${2}
+<% else %>
+  ${0}
+<% end %>
+endsnippet
+
+snippet lt
+<%= link_to "${1:name}", ${0:destination} %>
+endsnippet
+
+snippet ltca
+<%= link_to "${1:name}", controller: "${2:controller}", action: :${0:index} %>
+endsnippet
+
+snippet pry
+<% binding.remote_pry %>
+endsnippet
+
+snippet rp
+<%= render partial: "${0:partial}" %>
+endsnippet
+
+snippet rpl
+<%= render partial: "${1:partial}", locals: { ${2:key}: ${3:value}${0} } %>
+endsnippet
