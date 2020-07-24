@@ -12,7 +12,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'                              " Indent
 Plug 'machakann/vim-highlightedyank'                                    " Briefly highlight text that was yanked
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
 Plug 'mbbill/undotree'                                                  " Undo history visualizer
-Plug 'neoclide/coc.nvim', {'branch': 'release'}                         " Auto-completion
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }                       " Auto-completion
 Plug 'rafaqz/ranger.vim'                                                " File explorer
 Plug 'raimondi/delimitmate'                                             " Auto-completion for quotes, parens, brackets, etc.
 Plug 'rizzatti/dash.vim'                                                " Look up documentation using Dash
