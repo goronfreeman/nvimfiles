@@ -2,15 +2,20 @@
 let mapleader=" "
 inoremap jk <ESC>
 nnoremap <silent> <C-n> :nohl<CR>
-nnoremap <leader>o o<ESC>
-nnoremap <leader>O O<ESC>
-nmap <leader>cf :ClearQuickfixList<CR>
-nmap <silent> <leader>d <Plug>(DashSearch)
+nmap <silent> <leader>d <Plug>DashSearch
 
 " CoC
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-nmap <silent> gd <Plug>(coc-definition)
 nmap <leader>rn <Plug>(coc-rename)
+nmap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 " fugitive
 nmap <leader>gb :Gblame<CR>
