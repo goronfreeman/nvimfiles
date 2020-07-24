@@ -8,6 +8,8 @@ let g:coc_global_extensions = [
   \'coc-tsserver',
   \'coc-yaml'
 \]
+let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<s-tab>'
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
@@ -19,5 +21,3 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-let g:coc_snippet_next = '<tab>'
