@@ -18,6 +18,7 @@ Plug 'raimondi/delimitmate'                                             " Auto-c
 Plug 'rizzatti/dash.vim'                                                " Look up documentation using Dash
 Plug 'sheerun/vim-polyglot'                                             " Language pack
 Plug 'simeji/winresizer'                                                " Easy window resizing
+Plug 'tpope/vim-bundler'                                                " A lightweight bag of Vim goodies for Bundler
 Plug 'tpope/vim-commentary'                                             " Comment stuff out
 Plug 'tpope/vim-eunuch'                                                 " UNIX shell command helpers
 Plug 'tpope/vim-repeat'                                                 " Enable repeating for supported plugins
