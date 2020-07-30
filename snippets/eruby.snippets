@@ -1,12 +1,12 @@
-snippet # "<%# %>"
+snippet # "<%# %>" i
 <%# $0 %>
 endsnippet
 
-snippet - "<% %>"
+snippet - "<% %>" i
 <% $0 %>
 endsnippet
 
-snippet = "<%= %>"
+snippet = "<%= %>" i
 <%= $0 %>
 endsnippet
 
@@ -34,22 +34,22 @@ snippet ife "" b
 <% end %>
 endsnippet
 
-snippet lt "link_to (name, dest)"
+snippet lt "link_to (name, dest)" i
 <%= link_to "${1:name}", ${0:destination} %>
 endsnippet
 
-snippet ltca "link_to (controller, action)"
+snippet ltca "link_to (controller, action)" i
 <%= link_to "${1:name}", controller: "${2:controller}", action: :${0:index} %>
 endsnippet
 
-snippet pry "<% binding.remote_pry %>"
+snippet pry "<% binding.remote_pry %>" b
 <% binding.remote_pry %>
 endsnippet
 
-snippet rp "render (partial)"
+snippet rp "render (partial)" i
 <%= render partial: "${0:partial}" %>
 endsnippet
 
-snippet rpl "render (partial, locals)"
+snippet rpl "render (partial, locals)" i
 <%= render partial: "${1:partial}", locals: { ${2:key}: ${0:value} } %>
 endsnippet
