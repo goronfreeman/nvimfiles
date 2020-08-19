@@ -1,3 +1,14 @@
+snippet ajax "jQuery.ajax" b
+jQuery.ajax({
+  url: '$1',
+  type: '${2:GET}',
+  dataType: '${3:html}',
+  data: jQuery.param({
+    ${4:key}: ${5:val}
+  })
+})
+endsnippet
+
 snippet fun
 function ${1:name}($2) {
   $0
