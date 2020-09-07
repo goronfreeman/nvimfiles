@@ -18,6 +18,7 @@ Plug 'raimondi/delimitmate'                                             " Auto-c
 Plug 'rizzatti/dash.vim'                                                " Look up documentation using Dash
 Plug 'sheerun/vim-polyglot'                                             " Language pack
 Plug 'simeji/winresizer'                                                " Easy window resizing
+Plug 'stsewd/fzf-checkout.vim'                                          " Manage branches and tags with fzf
 Plug 'tpope/vim-bundler'                                                " A lightweight bag of Vim goodies for Bundler
 Plug 'tpope/vim-commentary'                                             " Comment stuff out
 Plug 'tpope/vim-eunuch'                                                 " UNIX shell command helpers
