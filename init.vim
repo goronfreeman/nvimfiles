@@ -5,7 +5,6 @@ Plug 'AndrewRadev/splitjoin.vim'                                        " Switch
 Plug 'SirVer/ultisnips'                                                 " Snippet manager
 Plug 'Yggdroot/indentLine'                                              " Display the indention levels with thin vertical lines
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
-Plug 'google/vim-searchindex'                                           " Display search match count
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
 Plug 'lukas-reineke/indent-blankline.nvim'                              " Indent guides on blank lines
@@ -110,6 +109,7 @@ set smartcase                                                           " Perfor
 " show invisibles
 set list                                                                " Show invisible characters
 set listchars=eol:¬,tab:￫\ ,trail:·,extends:»,precedes:«,nbsp:␣         " Set custom invisibles
+set shortmess-=S                                                        " Display search match count
 
 " tab settings
 set autoindent                                                          " Copy indent from current line when starting a new line
