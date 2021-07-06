@@ -27,15 +27,16 @@ Plug 'vim-airline/vim-airline'                                          " Status
 Plug 'vim-scripts/ReplaceWithRegister'                                  " Replace text object with contents of register
 Plug 'w0rp/ale'                                                         " Asynchronous linting
 
+" lua plugins
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " Git
 Plug 'airblade/vim-gitgutter'                                           " Show git diff in the gutter
 Plug 'rhysd/git-messenger.vim'                                          " Reveal commit messages under the cursor
 Plug 'tpope/vim-fugitive'                                               " Git wrapper
 Plug 'tpope/vim-rhubarb'                                                " GitHub extension for fugitive.vim
-
-" FZF
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                     " A command-line fuzzy finder
-Plug 'junegunn/fzf.vim'                                                 " FZF wrapper for Vim
 
 " markup
 Plug 'alvan/vim-closetag'                                               " Automatically close HTML tags
