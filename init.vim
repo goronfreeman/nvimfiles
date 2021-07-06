@@ -29,9 +29,9 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 " Git
-Plug 'airblade/vim-gitgutter'                                           " Show git diff in the gutter
 Plug 'tpope/vim-fugitive'                                               " Git wrapper
 Plug 'tpope/vim-rhubarb'                                                " GitHub extension for fugitive.vim
 
