@@ -6,7 +6,6 @@ Plug 'SirVer/ultisnips'                                                 " Snippe
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
-Plug 'machakann/vim-highlightedyank'                                    " Briefly highlight text that was yanked
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
 Plug 'mbbill/undotree'                                                  " Undo history visualizer
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }                       " Auto-completion
