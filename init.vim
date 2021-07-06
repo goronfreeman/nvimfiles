@@ -3,7 +3,6 @@ call plug#begin('~/.config/nvim/plugged')
 " general
 Plug 'AndrewRadev/splitjoin.vim'                                        " Switch between single-line and multi-line statements
 Plug 'SirVer/ultisnips'                                                 " Snippet manager
-Plug 'Yggdroot/indentLine'                                              " Display the indention levels with thin vertical lines
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
@@ -31,6 +30,7 @@ Plug 'w0rp/ale'                                                         " Asynch
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Git
 Plug 'airblade/vim-gitgutter'                                           " Show git diff in the gutter
