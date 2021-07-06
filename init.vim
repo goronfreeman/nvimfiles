@@ -32,7 +32,6 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Git
 Plug 'airblade/vim-gitgutter'                                           " Show git diff in the gutter
-Plug 'rhysd/git-messenger.vim'                                          " Reveal commit messages under the cursor
 Plug 'tpope/vim-fugitive'                                               " Git wrapper
 Plug 'tpope/vim-rhubarb'                                                " GitHub extension for fugitive.vim
 
