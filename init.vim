@@ -10,7 +10,6 @@ Plug 'machakann/vim-highlightedyank'                                    " Briefl
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
 Plug 'mbbill/undotree'                                                  " Undo history visualizer
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }                       " Auto-completion
-Plug 'rafaqz/ranger.vim'                                                " File explorer
 Plug 'raimondi/delimitmate'                                             " Auto-completion for quotes, parens, brackets, etc.
 Plug 'rizzatti/dash.vim'                                                " Look up documentation using Dash
 Plug 'sheerun/vim-polyglot'                                             " Language pack
