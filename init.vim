@@ -2,13 +2,13 @@ call plug#begin('~/.config/nvim/plugged')
 
 " general
 Plug 'AndrewRadev/splitjoin.vim'                                        " Switch between single-line and multi-line statements
+Plu
 Plug 'SirVer/ultisnips'                                                 " Snippet manager
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
 Plug 'mbbill/undotree'                                                  " Undo history visualizer
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }                       " Auto-completion
 Plug 'raimondi/delimitmate'                                             " Auto-completion for quotes, parens, brackets, etc.
 Plug 'rizzatti/dash.vim'                                                " Look up documentation using Dash
 Plug 'sheerun/vim-polyglot'                                             " Language pack
@@ -28,8 +28,10 @@ Plug 'w0rp/ale'                                                         " Asynch
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'hrsh7th/nvim-compe'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'neovim/nvim-lspconfig'
 
 " Git
 Plug 'tpope/vim-fugitive'                                               " Git wrapper
