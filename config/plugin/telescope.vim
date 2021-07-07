@@ -13,4 +13,5 @@ nnoremap <leader>H <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>h <cmd>lua require('telescope.builtin').oldfiles()<cr>
 nnoremap <leader>' <cmd>lua require('telescope.builtin').marks()<cr>
 nnoremap <leader>t <cmd>lua require('telescope.builtin').current_buffer_tags()<cr>
-nnoremap <leader>rr <cmd>lua require('telescope.builtin').file_browser()<cr>
+
+command GBranches lua require('telescope.builtin').git_branches()<cr>
