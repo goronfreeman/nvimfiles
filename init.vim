@@ -2,7 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 " general
 Plug 'AndrewRadev/splitjoin.vim'                                        " Switch between single-line and multi-line statements
-Plu
 Plug 'SirVer/ultisnips'                                                 " Snippet manager
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
@@ -46,9 +45,6 @@ Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }               " Displa
 Plug 'joker1007/vim-ruby-heredoc-syntax'                                " Syntax highlighting inside Ruby heredoc
 Plug 'tpope/vim-endwise'                                                " Automatically close Ruby blocks and more
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }                    " RoR tools
-
-" Rust
-Plug 'rust-lang/rust.vim'
 
 " testing
 Plug 'janko-m/vim-test'                                                 " Test runner
