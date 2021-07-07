@@ -5,6 +5,7 @@ Plug 'AndrewRadev/splitjoin.vim'                                        " Switch
 Plug 'SirVer/ultisnips'                                                 " Snippet manager
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
+Plug 'kevinhwang91/rnvimr'                                              " File explorer
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
 Plug 'mbbill/undotree'                                                  " Undo history visualizer
