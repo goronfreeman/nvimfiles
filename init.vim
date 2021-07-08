@@ -10,6 +10,7 @@ Plug 'ludovicchabant/vim-gutentags'                                     " Tag fi
 Plug 'machakann/vim-sandwich'                                           " Add/delete/replace surroundings of a sandwiched text object
 Plug 'mbbill/undotree'                                                  " Undo history visualizer
 Plug 'raimondi/delimitmate'                                             " Auto-completion for quotes, parens, brackets, etc.
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }                       " Auto-completion
 Plug 'rizzatti/dash.vim'                                                " Look up documentation using Dash
 Plug 'sheerun/vim-polyglot'                                             " Language pack
 Plug 'simeji/winresizer'                                                " Easy window resizing
@@ -27,10 +28,7 @@ Plug 'w0rp/ale'                                                         " Asynch
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'hrsh7th/nvim-compe'                                               " Auto-completion
 Plug 'lewis6991/gitsigns.nvim'                                          " Show git diff in the gutter
-Plug 'lukas-reineke/indent-blankline.nvim'                              " Display the indention levels with thin vertical lines
-Plug 'neovim/nvim-lspconfig'
 
 " Git
 Plug 'tpope/vim-fugitive'                                               " Git wrapper
