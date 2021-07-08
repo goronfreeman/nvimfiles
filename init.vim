@@ -81,12 +81,13 @@ set fillchars+=vert:│                                                   " Set 
 set hidden                                                              " Hide modified buffers instead of closing
 set inccommand=split                                                    " Enable preview split for substitution
 set lazyredraw                                                          " Increase performance of screen drawing
+set mouse=a                                                             " Enable mouse in all modes
 set nofoldenable                                                        " Disable folding by default
 set noshowmode                                                          " Remove extra status line
 set nowrap                                                              " Don't wrap lines
-set mouse=a                                                             " Enable mouse in all modes
 set shortmess=tIF                                                       " Don't show the intro message when starting Vim
 set sidescroll=1                                                        " Scroll one character at a time when moving horizontally
+set signcolumn=yes:1                                                    " Always show the sign column
 set wildmenu                                                            " Enable autocomplete menu
 
 " line numbers
