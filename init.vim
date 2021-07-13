@@ -58,7 +58,7 @@ Plug 'kana/vim-textobj-user'                                            " Create
 Plug 'nelstrom/vim-textobj-rubyblock'                                   " A custom text object for ruby blocks
 
 " themes
-Plug 'shaunsingh/nord.nvim'                                             " An arctic, north-bluish clean and elegant Vim theme
+Plug 'arcticicestudio/nord-vim'                                             " An arctic, north-bluish clean and elegant Vim theme
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'                                   " Seamless navigation between tmux panes and vim splits
