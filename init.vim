@@ -40,7 +40,7 @@ Plug 'junegunn/fzf.vim'                                                 " FZF wr
 " markup
 Plug 'alvan/vim-closetag'                                               " Automatically close HTML tags
 Plug 'mattn/emmet-vim'                                                  " HTML/CSS text expansion
-" Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }               " Display CSS colors inline
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }               " Display CSS colors inline
 
 " Ruby
 Plug 'joker1007/vim-ruby-heredoc-syntax'                                " Syntax highlighting inside Ruby heredoc
@@ -60,7 +60,7 @@ Plug 'kana/vim-textobj-user'                                            " Create
 Plug 'nelstrom/vim-textobj-rubyblock'                                   " A custom text object for ruby blocks
 
 " themes
-Plug 'arcticicestudio/nord-vim'                                             " An arctic, north-bluish clean and elegant Vim theme
+Plug 'arcticicestudio/nord-vim'                                         " An arctic, north-bluish clean and elegant Vim theme
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'                                   " Seamless navigation between tmux panes and vim splits
