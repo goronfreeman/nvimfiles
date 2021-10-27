@@ -25,15 +25,16 @@ Plug 'vim-scripts/ReplaceWithRegister'                                  " Replac
 Plug 'w0rp/ale'                                                         " Asynchronous linting
 
 " lua plugins
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'lewis6991/gitsigns.nvim'                                          " Show git diff in the gutter
 Plug 'lukas-reineke/indent-blankline.nvim'                              " Display the indention levels with thin vertical lines
 
 " Git
 Plug 'tpope/vim-fugitive'                                               " Git wrapper
 Plug 'tpope/vim-rhubarb'                                                " GitHub extension for fugitive.vim
+
+" FZF
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                     " A command-line fuzzy finder
+Plug 'junegunn/fzf.vim'                                                 " FZF wrapper for Vim
 
 " markup
 Plug 'alvan/vim-closetag'                                               " Automatically close HTML tags
