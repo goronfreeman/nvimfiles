@@ -25,6 +25,7 @@ Plug 'vim-scripts/ReplaceWithRegister'                                  " Replac
 Plug 'w0rp/ale'                                                         " Asynchronous linting
 
 " lua plugins
+Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'                                          " Show git diff in the gutter
 Plug 'lukas-reineke/indent-blankline.nvim'                              " Display the indention levels with thin vertical lines
 
@@ -39,7 +40,7 @@ Plug 'junegunn/fzf.vim'                                                 " FZF wr
 " markup
 Plug 'alvan/vim-closetag'                                               " Automatically close HTML tags
 Plug 'mattn/emmet-vim'                                                  " HTML/CSS text expansion
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }               " Display CSS colors inline
+" Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }               " Display CSS colors inline
 
 " Ruby
 Plug 'joker1007/vim-ruby-heredoc-syntax'                                " Syntax highlighting inside Ruby heredoc
