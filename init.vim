@@ -26,6 +26,7 @@ Plug 'w0rp/ale'                                                         " Asynch
 
 " lua plugins
 Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
 Plug 'lewis6991/gitsigns.nvim'                                          " Show git diff in the gutter
 Plug 'lukas-reineke/indent-blankline.nvim'                              " Display the indention levels with thin vertical lines
 
