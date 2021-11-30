@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'                                        " Switch between single-line and multi-line statements
 Plug 'SirVer/ultisnips'                                                 " Snippet manager
 Plug 'andymass/vim-tradewinds'                                          " Easy window movement
+Plug 'github/copilot.vim'                                               " Neovim plugin for GitHub Copilot
 Plug 'junegunn/vim-easy-align'                                          " Align lines by a specific character
 Plug 'kevinhwang91/rnvimr'                                              " File explorer
 Plug 'ludovicchabant/vim-gutentags'                                     " Tag file management
